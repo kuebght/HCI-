@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset=UTF-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta http-equiv=X-UA-Compatible content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>声临其境</title>
+    <!-- 引入js -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer=defer src="../static/js/runtime.js"></script>
+    <script defer=defer src="../static/js/jquery.js"></script>
+    <script defer=defer src="../static/js/commons.js"></script>
+    <script defer=defer src="../static/js/index.js"></script>
+    <script defer=defer src="../static/js/sjm.js"></script>
+    <script defer=defer src="../static/js/cjr.js"></script>
+    <!-- 引入css -->
+    <link href="../static/css/commons.css" rel=stylesheet>
+    <link href="../static/css/sjm.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="service-item">
+        <div class="container01">
+            <!-- 菜单栏内容 -->
+            <div id="menu">
+                <div class="role" id="0" onclick="get_prompt(this)">
+                    <img class="role_icon" src="/static/images/role.png">
+                    <span class="role_name">英语翻译</span>
+                </div>
+                <div class="role" id="1" onclick="get_prompt(this)" >
+                    <img class="role_icon" src="/static/images/role.png">
+                    <span class="role_name">故事分享</span>
+                </div>
+                <div class="role" id="2" onclick="get_prompt(this)">
+                    <img class="role_icon" src="/static/images/role.png">
+                    <span class="role_name">诗词创作</span>
+                </div>
+                <div class="role" id="3" onclick="get_prompt(this)">
+                    <img class="role_icon" src="/static/images/role.png">
+                    <span class="role_name">标题生成</span>
+                </div>
+                <div class="role" id="4" onclick="get_prompt(this)">
+                    <img class="role_icon" src="/static/images/role.png">
+                    <span class="role_name">周公解梦</span>
+                </div>
+                <div class="role" id="5" onclick="get_prompt(this)">
+                    <img class="role_icon" src="/static/images/role.png">
+                    <span class="role_name">好友畅聊</span>
+                </div>
+                <div class="usage">
+                    <p>使用说明</p>
+                </div>
+            </div>
+
+            <!-- 主体内容 -->
+            <div id="container02">
+                <!-- 结果信息输出 -->
+                    <div id='output_box'>
+
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+    <div id="result">
+        <dev class="shadowin">
+            <textarea id="result_output" placeholder="给ChatGPT发送消息..."></textarea>
+            <div id="record-block">
+                <img src="/static/images/record.png" id="record">
+                <div class="service-item-taste" style="display: none;">
+                    <div class="service-item-taste-content">
+                        <div class=start-taste>
+                            <div class=start-taste-left>
+                                <div class=time-box>
+                                    <span class=start-taste-line>
+                                        <hr class="hr hr1">
+                                        <hr class="hr hr2">
+                                        <hr class="hr hr3">
+                                        <hr class="hr hr4">
+                                        <hr class="hr hr5">
+                                        <hr class="hr hr6">
+                                        <hr class="hr hr7">
+                                        <hr class="hr hr8">
+                                        <hr class="hr hr9">
+                                        <hr class="hr hr10">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dev>
+        
+        <div id="res-block">
+        
+            <button>
+                <span class="button_top" id="send"> 发送
+                </span>
+              </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2024 用户交互技术-王思源 王惠雯 霍华伟 </p>
+      </div>
+</body>
+</html>
+
+<script>
+function hid() {
+    document.getElementById('play').style.display = 'none';
+    console.log("hid");
+    document.getElementById('stop-play').style.display = 'none';
+}
+function show_send() {
+    document.getElementById('ask').style.display = 'block';
+}
+</script>
