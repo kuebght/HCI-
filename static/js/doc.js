@@ -49,7 +49,7 @@ function httpRequest(url, data, method, success) {
       // 如果有值 从send发送
       ajax.send(ajaxData);
     } else {
-      // 木有值 直接发送即可
+      // 没有值 直接发送即可
       ajax.send();
     }
   }

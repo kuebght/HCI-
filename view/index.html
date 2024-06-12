@@ -12,11 +12,11 @@
     <script defer=defer src="../static/js/jquery.js"></script>
     <script defer=defer src="../static/js/commons.js"></script>
     <script defer=defer src="../static/js/index.js"></script>
-    <script defer=defer src="../static/js/sjm.js"></script>
-    <script defer=defer src="../static/js/cjr.js"></script>
+    <script defer=defer src="../static/js/roleText.js"></script>
+    <script defer=defer src="../static/js/communication.js"></script>
     <!-- 引入css -->
-    <link href="../static/css/commons.css" rel=stylesheet>
-    <link href="../static/css/sjm.css" rel="stylesheet">
+    <link href="../static/css/style1.css" rel=stylesheet>
+    <link href="../static/css/style2.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 </head>
@@ -51,7 +51,11 @@
                     <span class="role_name">好友畅聊</span>
                 </div>
                 <div class="usage">
-                    <p>使用说明</p>
+                    <h5>使用说明</h5>
+                    <p>①点击左侧侧边栏按钮，选择一个场景与机器人对话;</p>
+                    <p>②点击右侧输入框，键盘输入你想发送的消息；<br>
+                        &nbsp&nbsp&nbsp或者点击麦克风图标进行语音输入，点击波形条图标可停止语音输入；</p>
+                    <p>③点击发送按钮，可以在右侧展示区看见对话结果，点击播放键可听到语音回复；</p>
                 </div>
             </div>
 
@@ -69,7 +73,7 @@
     </div>
     <div id="result">
         <dev class="shadowin">
-            <textarea id="result_output" placeholder="给ChatGPT发送消息..."></textarea>
+            <textarea id="result_output" placeholder="给机器人发送消息..."></textarea>
             <div id="record-block">
                 <img src="/static/images/record.png" id="record">
                 <div class="service-item-taste" style="display: none;">
