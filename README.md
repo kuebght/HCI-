@@ -20,7 +20,7 @@ Ensure that the Voice_Recognition.exe can connect to the network, which means th
 
  
 
-![img](file:///C:/Users/28232/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](file:///readme-img/屏幕截图 2024-06-12 211222.png)
 
  
 
