@@ -389,7 +389,6 @@ class IatRecorder {
 
 
 // ======================开始调用=============================
-var vConsole = new (vconsole__WEBPACK_IMPORTED_MODULE_5___default())();
 let iatRecorder = new IatRecorder();
 let countInterval;
 // 状态改变时处罚
